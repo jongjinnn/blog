@@ -44,7 +44,7 @@ export default function Layout({ children, home }) {
               <Image
                 priority
                 src="/images/profile.png"
-                className="mb-[1rem] h-[144px] rounded-full"
+                className="mb-[1rem] h-[144px] rounded-full object-cover"
                 height={144}
                 width={144}
                 alt="profile image"
