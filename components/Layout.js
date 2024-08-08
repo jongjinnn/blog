@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Header from './Header'
 
 const introduce = '블로그 방문을 환영합니다.'
-export const siteTitle = 'Jinny-Log'
+export const siteTitle = "Jongjin's Log"
 
 export default function Layout({ children, home }) {
   return (
