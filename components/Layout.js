@@ -1,13 +1,13 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Link from 'next/link'
+import Header from './Header'
 
-const introduce = '안녕하세요, 오종진입니다.'
+const introduce = '블로그 방문을 환영합니다.'
 export const siteTitle = 'Jinny-Log'
 
 export default function Layout({ children, home }) {
   return (
-    <div className="mx-auto mb-[6rem] mt-[3rem] max-w-[36rem] px-[1rem] py-0">
+    <div className="mx-auto mb-[6rem] max-w-[40rem] px-[1rem] py-0">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -23,23 +23,14 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className="flex flex-col">
+      <Header />
+      <section>
         {home && (
-          <>
-            <Image
-              priority
-              src="/images/profile.png"
-              className="mx-auto h-[144px] items-center rounded-full object-cover"
-              height={144}
-              width={144}
-              alt="profile image"
-            />
-            <h1 className="mb-[0.6rem] mt-[2rem] text-[1.5rem] font-bold leading-[1.2] tracking-tighter">
-              👋 &nbsp; {introduce}
-            </h1>
-          </>
+          <h1 className="mb-[0.6rem] mt-[2rem] text-[1.5rem] font-bold leading-[1.2] tracking-tighter">
+            👋 &nbsp; {introduce}
+          </h1>
         )}
-      </header>
+      </section>
       <main>{children}</main>
       {!home && (
         <div className="mt-[3rem]">
