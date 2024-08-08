@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Head from 'next/head'
 
 const portfolioLink = 'https://dev-jongjin.oopy.io'
-const githubLink = 'https://github.com/jongjinnn.'
+const githubLink = 'https://github.com/jongjinnn'
 const email = 'ohjongjin051010@gmail.com'
 
 export default function AboutMe() {
