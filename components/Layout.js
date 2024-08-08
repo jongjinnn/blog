@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 
-const name = '오종진 | Frontend Developer'
+const introduce = '안녕하세요, 오종진입니다.'
 export const siteTitle = 'Jinny-Log'
 
 export default function Layout({ children, home }) {
@@ -23,33 +23,20 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className="flex flex-col items-center">
-        {home ? (
+      <header className="flex flex-col">
+        {home && (
           <>
             <Image
               priority
               src="/images/profile.png"
-              className="h-[144px] rounded-full object-cover"
+              className="mx-auto h-[144px] items-center rounded-full object-cover"
               height={144}
               width={144}
               alt="profile image"
             />
-            <h1 className="mb-[2rem] mt-[1rem] text-[2rem] font-bold leading-[1.2] tracking-tighter">
-              {name}
+            <h1 className="mb-[0.6rem] mt-[2rem] text-[1.5rem] font-bold leading-[1.2] tracking-tighter">
+              👋 &nbsp; {introduce}
             </h1>
-          </>
-        ) : (
-          <>
-            <Link href="/">
-              <Image
-                priority
-                src="/images/profile.png"
-                className="mb-[1rem] h-[144px] rounded-full object-cover"
-                height={144}
-                width={144}
-                alt="profile image"
-              />
-            </Link>
           </>
         )}
       </header>
