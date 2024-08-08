@@ -32,7 +32,7 @@ export default function AboutMe() {
               <b>📧 Email</b>: {email}
             </div>
             <div>
-              <b>📄 Portfolio</b>:
+              <b>📄 Portfolio</b>:&nbsp;
               <Link href={portfolioLink}>{portfolioLink}</Link>
             </div>
             <div>
