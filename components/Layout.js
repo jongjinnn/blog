@@ -27,7 +27,7 @@ export default function Layout({ children, home }) {
       <section>
         {home && (
           <h1 className="mb-[0.6rem] mt-[2rem] text-[1.5rem] font-bold leading-[1.2] tracking-tighter">
-            👋 &nbsp; {introduce}
+            👋&nbsp;{introduce}
           </h1>
         )}
       </section>
