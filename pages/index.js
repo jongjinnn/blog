@@ -28,7 +28,7 @@ export default function Home({ allPostsData }) {
         </p>
       </section>
       <section className="pt-[1px] text-[1.2rem] leading-normal">
-        <h2 className="mx-0 mb-[0.5rem] mt-[4rem] text-[1.5rem] font-bold leading-[1.4]">
+        <h2 className="mx-0 mb-[0.5rem] mt-[3rem] text-[1.5rem] font-bold leading-[1.4]">
           Writing
         </h2>
         <div className="mb-[1rem] h-[1px] w-full bg-slate-300" />
