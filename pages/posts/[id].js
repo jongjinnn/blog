@@ -4,7 +4,7 @@ import Head from 'next/head'
 import { getAllPostIds, getPostData } from '../../lib/posts'
 import ReactMarkdown from 'react-markdown'
 import rehypeHighlight from 'rehype-highlight'
-import rehypeRaw from 'rehype-raw' // 추가된 부분
+import rehypeRaw from 'rehype-raw'
 import 'highlight.js/styles/a11y-dark.css'
 
 export async function getStaticPaths() {
