@@ -2,6 +2,10 @@ import Layout from '../../components/Layout'
 import Date from '../../components/Date'
 import Head from 'next/head'
 import { getAllPostIds, getPostData } from '../../lib/posts'
+import ReactMarkdown from 'react-markdown'
+import rehypeHighlight from 'rehype-highlight'
+import rehypeRaw from 'rehype-raw' // 추가된 부분
+import 'highlight.js/styles/a11y-dark.css'
 
 export async function getStaticPaths() {
   const paths = getAllPostIds()
@@ -33,10 +37,11 @@ export default function Post({ postData }) {
         <div className="float-right text-[#666]">
           <Date dateString={postData.date} />
         </div>
-        <div
-          dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
-          className="mt-[3rem]"
-        />
+        <div className="post-content mt-[4rem]">
+          <ReactMarkdown rehypePlugins={[rehypeHighlight, rehypeRaw]}>
+            {postData.content}
+          </ReactMarkdown>
+        </div>
       </article>
     </Layout>
   )
