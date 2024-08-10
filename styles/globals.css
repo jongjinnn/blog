@@ -42,3 +42,32 @@ img {
   max-width: 100%;
   display: block;
 }
+
+.post-content {
+  p {
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  h4 {
+    font-size: 0.9rem;
+  }
+
+  hr {
+    margin-bottom: 0.5rem;
+  }
+}
+
+code {
+  padding: 3px 4px;
+  border: none;
+  border-radius: 3px;
+  background-color: #e9ecef;
+  font-size: 0.7rem;
+  font-family: 'Pretendard', 'Malgun Gothic', sans-serif;
+  margin-top: 5px;
+}
