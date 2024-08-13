@@ -6,6 +6,7 @@ import ReactMarkdown from 'react-markdown'
 import rehypeHighlight from 'rehype-highlight'
 import rehypeRaw from 'rehype-raw'
 import 'highlight.js/styles/a11y-dark.css'
+import Comment from '../../components/Comment'
 
 export async function getStaticPaths() {
   const paths = getAllPostIds()
@@ -43,6 +44,7 @@ export default function Post({ postData }) {
           </ReactMarkdown>
         </div>
       </article>
+      <Comment />
     </Layout>
   )
 }
