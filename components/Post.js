@@ -2,8 +2,6 @@ import Link from 'next/link'
 import Date from './Date'
 import Image from 'next/image'
 
-// test
-
 export default function Post({ id, title, description, date }) {
   return (
     <>
