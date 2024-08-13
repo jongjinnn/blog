@@ -1,4 +1,4 @@
-# Blog
+# Jongjin's Log
 
 [블로그 방문하기](https://blog-wheat.vercel.app/)
 
