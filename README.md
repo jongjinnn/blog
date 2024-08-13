@@ -16,6 +16,7 @@
 - Javascript
 - Tailwind-css
 - React-Markdown
+- Utteranc
 - Gray-Matter
 - fs, path (내장 모듈)
 
