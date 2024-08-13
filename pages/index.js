@@ -33,7 +33,13 @@ export default function Home({ allPostsData }) {
         <div className="mb-[1rem] h-[1px] w-full bg-slate-300" />
         <ul className="m-0 list-none p-0">
           {allPostsData.map(({ id, title, description, date }) => (
-            <Post id={id} title={title} description={description} date={date} />
+            <Post
+              key={id}
+              id={id}
+              title={title}
+              description={description}
+              date={date}
+            />
           ))}
         </ul>
       </section>

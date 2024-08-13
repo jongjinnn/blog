@@ -1,10 +1,11 @@
 import Link from 'next/link'
 import Date from './Date'
 import Image from 'next/image'
+import { v4 as uuidv4 } from 'uuid'
 
 export default function Post({ id, title, description, date }) {
   return (
-    <div className="mb-[1.5rem] flex justify-between" key={id}>
+    <div className="mb-[1.5rem] flex justify-between">
       <div className="flex flex-col">
         <Link href={`/posts/${id}`} className="text-[1.3rem]">
           {title}
