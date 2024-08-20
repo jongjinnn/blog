@@ -18,7 +18,7 @@ export default function Post({ id, title, description, date }) {
         <Image
           priority
           src={`/images/` + id + '.png'}
-          className="h-[120px] items-center rounded-sm object-cover"
+          className="hidden h-[120px] items-center rounded-sm object-cover sm:block"
           width={145}
           height={120}
           alt="post thumbnail"
