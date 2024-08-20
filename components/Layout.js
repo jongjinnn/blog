@@ -9,10 +9,15 @@ export default function Layout({ children, home }) {
   return (
     <div className="mx-auto mb-[6rem] max-w-[40rem] px-[1rem] py-0">
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="icon"
+          href="images/blog.png"
+          type="image/png"
+          sizes="32x32"
+        />
         <meta
           name="description"
-          content="프론트엔드 개발자 오종진의 개인 블로그"
+          content="프론트엔드 개발자 오종진의 개인 블로그입니다."
         />
         <meta
           property="og:image"
