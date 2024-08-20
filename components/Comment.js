@@ -14,5 +14,10 @@ export default function Comment() {
     commentsEl.current?.appendChild(scriptEl)
   }, [])
 
-  return <section ref={commentsEl} className="mt-[3rem]" />
+  return (
+    <>
+      <hr className="mb-[1rem] mt-[3rem]" />
+      <section ref={commentsEl} />
+    </>
+  )
 }
